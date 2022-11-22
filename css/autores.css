@@ -1,0 +1,84 @@
+/***********************************************/
+/* Web del Romanticismo                        */
+/* css Autores Románticos                      */
+/* Autor: yo                                   */
+/* Version: esta                               */
+/***********************************************/
+
+/**********ESTILO GENERAL************/
+
+@font-face {
+    font-family: cuerpo;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(../fonts/Figtree/Figtree-VariableFont_wght.ttf);
+}
+
+/************* OJOOOOOOOOOOOO!!!!!!!!!!!: PARA QUE CUENTE EN EL WIDTH DE CADA CAJA, EL BORDE Y EL PADDING ***/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: 'cuerpo', sans-serif; 
+    background-image: url('../images/backgrounds/adobe-stock.jpg');
+    background-repeat: repeat-x;
+    background-size: 600px;
+    background-position: center;
+}
+
+#wrapper{
+    background-color: rgba(255, 228, 196, 1);
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    opacity: 1;
+}
+
+h1, h2, h3{
+    font-family: 'titulo', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    border: 2px dotted;
+    border-radius: 10px;
+    padding: 15px;
+    text-shadow: .04em .04em 0 #4d5eb3;
+}
+
+p{
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+#espronceda{
+    width: 20%;
+    border-radius: 15px;
+    float: right;
+    margin-left: 2%;
+    transition: all 1s;
+}
+
+
+/***************** MEDIA QUERIES ******************/
+
+/** TAMAÑO TABLET **/
+@media only screen and (width<=900px){ /*Todas las excepciones para móvil */
+    #espronceda{width: 50%;}
+    #wrapper{width: 90%;}
+}
+/** TAMAÑO MOVIL **/
+@media only screen and (width<=500px){ /*Todas las excepciones para móvil */
+    body{padding: 0; margin: 0;}
+    #espronceda{width: 100%; float: none; margin: 0;}
+    #wrapper{width: 100%; padding: 0;}
+}

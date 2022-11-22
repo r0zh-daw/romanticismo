@@ -1,0 +1,37 @@
+/***********************************************/
+/* Web del Romanticismo                        */
+/* css de la cancion del pirata                */
+/* Autor: yo                                   */
+/* Version: esta                               */
+/***********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+body{
+    background-image: url("../images/photo-background/Pirate-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #c8a076e3;
+}
+
+div{
+    padding: 2%;
+    width: 25vw;
+    margin-left: 55%;
+    margin-top: 5vh;
+    background-color: #c8a076e3;
+}
+
+h1{
+    margin: 0%;
+    font-family: 'Island Moments', cursive;
+    font-size: 5em;
+    text-align: center;
+    color: #584633;
+}
+
+
+p{
+    text-align: center;
+    color: #68513a;
+}
